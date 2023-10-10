@@ -6,16 +6,18 @@ header a {
     display: inline-block;
     margin-left: 140px;
     padding: 15px;
-    color: white
+    color: darkblue;
+    text-shadow: 3px;
 }
 .Main {
     left: 0;
 }
 body{
-    background-color: rgb(187, 7, 7);
+    background-color: aquamarine;
 }
 header{
-    background-color: rgb(148, 31, 31);
+    background-color: darkcyan;
+    border-width: 5px;
 }
 footer{
     position: absolute;
@@ -23,9 +25,12 @@ footer{
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: rgb(153, 40, 40);
+    background-color: darkslategray;
     min-width: 100%;
     font-size: 23px;
+}
+footer a {
+    color: lightgrey;
 }
 
 footer #tg{
