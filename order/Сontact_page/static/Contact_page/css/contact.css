@@ -1,0 +1,22 @@
+#image{
+    display: inline-block;
+    width:20%;
+    height: 20%;
+    margin-left: 0px;
+}
+
+p{
+    font-size: x-large;
+}
+
+#telega{
+    display: inline-block;
+    font-size: x-large;
+    color: black;
+}
+
+#adress{
+    display: inline-block;
+    font-size: x-large;
+    color: black;
+}
