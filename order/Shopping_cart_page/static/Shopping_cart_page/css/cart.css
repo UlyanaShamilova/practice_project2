@@ -1,0 +1,35 @@
+.buttons{
+    display: inline-block;
+    margin-bottom: 0px;
+    width: 100%;
+    height: auto;
+}
+.products-in-cart{
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    
+}
+
+.product{
+    background: rgb(8, 147, 31);
+    width: 150px;
+    height: 200px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+}
+
+.amount_product{
+    display: flex;
+    flex-direction: row;
+    padding: 5px;
+}
+.amount_product button{
+    color: aqua;
+    font-size: larger;
+    width: 30px;
+}

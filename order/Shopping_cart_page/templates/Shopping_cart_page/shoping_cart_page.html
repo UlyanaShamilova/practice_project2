@@ -1,1 +1,52 @@
 {% extends 'app_settings/base.html' %}
+
+{% load static %}
+
+{% block links %}
+    <link rel="stylesheet" href="{% static 'Shopping_cart_page/css/cart.css' %}">
+{% endblock %}
+
+{% block content %}
+<div class="buttons">
+    <button class = "buy">Заказати</button>
+    <button class = "del_all">Очистити корзину</button>
+</div>
+<div class="products-in-cart">
+    <div class = "product">
+        <img src="#" alt="Not found">
+        <p>name</p>
+        <div class = "amount_product">
+            <button class="minus">-</button>
+            <p>1</p>
+            <button class="plus">+</button>
+        </div>
+        <p class = "price"></p>
+        <button id = "del">Видалити</button>
+        
+    </div>
+    <div class = "product">
+        <img src="#" alt="Not found">
+        <p>name</p>
+        <div class = "amount_product">
+            <button class="minus">-</button>
+            <p>1</p>
+            <button class="plus">+</button>
+        </div>
+        <p class = "price"></p>
+        <button id = "del">Видалити</button>
+        
+    </div>
+    <div class = "product">
+        <img src="#" alt="Not found">
+        <p>name</p>
+        <div class = "amount_product">
+            <button class="minus">-</button>
+            <p>1</p>
+            <button class="plus">+</button>
+        </div>
+        <p class = "price"></p>
+        <button id = "del">Видалити</button>
+        
+    </div>
+</div>
+{% endblock %}
