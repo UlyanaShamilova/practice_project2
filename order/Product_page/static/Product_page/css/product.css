@@ -35,10 +35,14 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 100%;
+    flex-direction: row;
+    width: auto;
 }
 
 .product{
+    display: flex;
+    justify-content: center;
+    align-items: center;
     border: 5px black solid;
     border-radius: 5px;
 }
