@@ -29,7 +29,13 @@
     padding: 5px;
 }
 .amount_product button{
-    color: aqua;
     font-size: larger;
-    width: 30px;
+    width: 20px;
+    height: auto;
+    border: 1px black solid;
+    border-radius: 5px;
+}
+
+.amount_product p{
+    font-size: 20px;
 }
