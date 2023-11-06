@@ -1,0 +1,14 @@
+{% extends 'app_settings/base.html' %}
+
+{% block content %}
+    <form action="" methon="POST">
+        {% csrf_token %}
+        <input type="text" placeholder="Login" name="username" value="{{username}}">
+        <input type="password" placeholder="Password" name="password" value="{{password}}">
+        <button>Увійти</button>
+        {% if error %}
+            <p class="error">{{error}}</p>
+        {% endif %}
+        
+    </form>
+{% endblock %}
