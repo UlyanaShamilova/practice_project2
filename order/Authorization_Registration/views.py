@@ -53,7 +53,7 @@ def reg(request):
                 else:
                     context["error"] = "Паролі не співпадають"
             else:
-                context["error"] = "Пароль не меньшше ніж 8 символів!"  
+                context["error"] = "Пароль не менше ніж 8 символів!"  
         else:
             context["error"] = "Заповніть всі поля!"
 

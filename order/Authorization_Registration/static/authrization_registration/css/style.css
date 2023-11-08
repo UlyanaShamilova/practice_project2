@@ -1,0 +1,27 @@
+form {
+    margin-top: 110px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 12px;
+    padding: 20px;
+}
+
+input {
+    text-align: center;
+    margin: 5px;
+    height: 30px;
+    border-radius: 12px;
+}
+
+button:hover {
+    background-color: aqua;
+}
+
+button {
+    border-radius: 7px;
+}
+
+.error{
+    color: red;
+}
