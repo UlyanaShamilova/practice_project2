@@ -1,0 +1,21 @@
+{% extends 'app_settings/base.html' %}
+{% load static %}
+
+{% block links %}
+<link rel="stylesheet" href="{% static 'authrization_registration/css/style.css' %}">
+{% endblock %}
+{% block content %}
+    <form action="" method="POST">
+        {% csrf_token %}
+        <input type="text" placeholder="Login" name="login" value="{{login}}">
+        <input type="text" placeholder="Name" name="name" value="{{name}}">
+        <input type="text" placeholder="Surname" name="surname" value="{{surname}}">
+        <input type="password" placeholder="Password" name="password" value="{{password}}">
+        <input type="password" placeholder="Confirm password" name="confirm_password" value="{{confirm_password}}">
+        <button>Зареєструватись</button>
+        {% if error %}
+            <p class="error">{{error}}</p>
+        {% endif %}
+    </form>
+    
+{% endblock %}

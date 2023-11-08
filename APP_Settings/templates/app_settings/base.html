@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'app_settings/css/base.css' %}">
+    <title>Магазин FarmLand</title>
+    {% block links %}
+
+    {% endblock %}
+</head>
+<body>
+    <header>
+        <a href="{% url 'main' %}" id = "Main"><h2>Головна сторінка</h2></a>
+        <a href="{% url 'contacts' %}"><h2>Контакти</h2></a>
+        <a href="{% url 'shopping' %}"><h2>Кошик</h2></a>
+        <a href="{% url 'products' %}"><h2>Продукти</h2></a>
+        <a href="{% url 'auth' %}"><h2>Авторизація</h2></a>
+        <a href="{% url 'reg' %}"><h2>Реєстрація</h2></a>
+        
+    </header>
+    <main>
+        {% block content %}
+
+        {% endblock %}
+    </main>
+    <footer>
+        <a href="">Instagram</a>
+        <a href="" id = "tg">Telegram</a>
+    </footer>
+</body>
+</html>

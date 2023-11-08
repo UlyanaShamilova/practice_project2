@@ -1,0 +1,39 @@
+{% extends 'app_settings/base.html' %}
+{% load static %}
+{% block links %}
+    <link rel="stylesheet" href="{% static 'Product_page/css/product.css' %}">
+{% endblock %}
+{% block content %}
+    <div id = "all_products" id  = "div_john_deere_8400R">
+        <div class = "product">
+            <img src="{% static 'Product_page/img/john_deere_8400R.png' %}" alt="Not found" id  = "john_deere_8400R">
+            <p>John Deere 8400R 2017 года</p>
+            <p class = "price">8 868 380 ₴</p>
+            <button>Додати до кошику</button>
+        </div>
+        <div class = "product" id  = "div_john_deere_9510R">
+            <img src="{% static 'Product_page/img/john_deere_9510R.png' %}" alt="Not found" id  = "john_deere_9510R">
+            <p>John Deere 9510 R 2014 года</p>
+            <p class = "price">6 686 427 ₴</p>
+            <button>Додати до кошику</button>
+        </div>
+        <div class = "product" id  = "div_new_holland">
+            <img src="{% static 'Product_page/img/new_holland.png' %}" alt="Not found" id  = "john_deere_9510R">
+            <p>New Holland CX 8070 2010 року</p>
+            <p class = "price">4 870 520 ₴</p>
+            <button>Додати до кошику</button>
+        </div>
+        <div class = "product" id  = "div_john_deere_8400R">
+            <img src="{% static 'Product_page/img/lovl.png' %}" alt="Not found" id  = "john_deere_9510R">
+            <p>LOVL GM80</p>
+            <p class = "price">2 561 307 ₴</p>
+            <button>Додати до кошику</button>
+        </div>
+        <div class = "product" id  = "div_john_deere_8400R">
+            <img src="{% static 'Product_page/img/matrot.png' %}" alt="Not found" id  = "john_deere_9510R">
+            <p>Matrot M44D 36M Self Propelled Sprayer</p>
+            <p class = "price">759 005 ₴</p>
+            <button>Додати до кошику</button>
+        </div>
+    </div>
+{% endblock %}

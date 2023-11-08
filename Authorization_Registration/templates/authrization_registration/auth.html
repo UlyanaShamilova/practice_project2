@@ -1,0 +1,16 @@
+{% extends 'app_settings/base.html' %}
+{% load static %}
+{% block links %}
+<link rel="stylesheet" href="{% static 'authrization_registration/css/style.css' %}">
+{% endblock %}
+{% block content %}
+    <form action="" method="POST">
+        {% csrf_token %}
+        <input type="text" placeholder="Username" name="username" value="{{username}}">
+        <input type="password" placeholder="Password" name="password" value="{{password}}">
+        {% if error %}
+            <p class="error">{{error}}</p>
+        {% endif %}
+        <button>Увійти</button>
+    </form>
+{% endblock %}
